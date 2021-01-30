@@ -129,8 +129,27 @@ header {
     }
 }
 
+/* collection */
+.card-shadow {
+    box-shadow: 5px 8px 20px #444;
+}
 
+.col-img-heading {
+    position: absolute;
+    top: 70%;
+    right: 0;
+    background: #222;
+    opacity: .7;
+    letter-spacing: 1px;
+    font-size: 14px;
+    width: 70%;
+    cursor: pointer;
+    transition: all .5s;
+}
 
+.col-img-heading:hover {
+    opacity: .9;
+}
 
 
 

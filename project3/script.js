@@ -23,6 +23,20 @@ $(document).ready(function () {
             $('.mission-text').removeClass('fromRight')
         }
     });
+
+    $('.gallery-list-item').click(function() {
+        let galleryClass = $(this).data('filter');
+        if(galleryClass === 'all') {
+            $('.filter').show(300);
+        } else {
+            $('.filter').not('.' + galleryClass).hide(300);
+            $('.filter').filter('.' + galleryClass).show(300);
+        }
+
+        $(this)
+            .addClass('gallery-active')
+            .siblings().removeClass('gallery-active');
+    });
 });
 
 
